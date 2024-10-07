@@ -1,0 +1,12 @@
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    /*.hero section will always be at least as tall as the full height of the browser window, ensuring that the hero section covers the entire screen.*/
+    background:linear-gradient(rgba(8,0,58,0.7),rgba(8,0,58,0.7)) ,url('../../AssetsEduHub/hero.png');
+    /* 0.7 -> Opacity (or transparency), where 0 is fully transparent and 1 is fully opaque.*/
+    background-size: cover;
+    /*This ensures that the background image (the hero.png image) covers the entire .hero element.*/
+    background-position: center;
+    /*This centers the background image within the .hero section.*/
+    color: #fff;
+}
