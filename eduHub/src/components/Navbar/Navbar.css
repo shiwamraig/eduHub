@@ -2,7 +2,7 @@ nav{
     width: 100%;
     /* background: #333;  removing this makes the background transparent          */
     color: #fff;
-    padding: 4px 0;
+    padding: 4px 0; 
     position: fixed ; 
     /* since we want navbar to fixed at top  */
     top: 0;
@@ -26,4 +26,9 @@ nav ul li{
     /* removes default bullet points*/
     margin: 5px 20px;
     font-size: 16px;
+}
+
+.dark-nav {
+    background: #212ea0;
+    transition: 0.5s;
 }

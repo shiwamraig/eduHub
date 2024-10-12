@@ -1,0 +1,49 @@
+.programs{
+    margin: 80px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.program img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    /* Images by default are inline elements, but setting display: block makes the image a block-level element.
+    This removes any unwanted white space below the image and ensures that the image occupies the full width of its parent. */
+}
+.program{
+    flex-basis: 31%;
+    /*Flexbox will try to fit each .program to take up 31% of the container's width */
+    position:  relative;
+    /*Without position: relative; on .program, .caption would not stay inside the bounds of .program and could be misplaced.*/
+}
+.caption{
+    border-radius: 10px;
+    position: absolute;
+    /*misplaced inside the whole body if the parent's (program) is not set position:relative*/
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,15 ,152, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0;
+    padding-top: 70%;
+    transition: 0.4s;
+}
+.caption img{
+    width: 60px;
+    margin-bottom: 10px;
+}
+.program:hover .caption{  /*when hovered on caption set its opacity to 1*/
+    opacity: 1; 
+    padding-top: 0;
+
+
+}

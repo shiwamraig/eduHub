@@ -30,4 +30,13 @@ a{
   border: 0;
   outline: 0; 
   /*removes outline when element is focused*/
+  display: inline-flex ;
+  /* An inline element can sit alongside other inline elements within the same parent. */
+  align-items: center;
+  justify-content: center;
 }
+
+.btn.dark-btn{
+  background: #212ea0;
+  color: #fff;
+}                                                                                               
